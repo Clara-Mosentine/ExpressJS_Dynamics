@@ -1,0 +1,34 @@
+/* Place your CSS styles in this file */
+
+.aw { /* answer <- NEEDS NEW/DIF CLASS ASSIGNMENT*/
+  color: lavender;
+  font-family: verdana;
+  font-size: 15px;
+}
+
+body {
+  background: rgb(168,136,193);
+  background: linear-gradient(90deg, rgba(168,136,193,1) 0%, rgba(121,189,203,1) 100%);
+}
+
+h1 { /* Header */
+  color: navy;
+  font-family: Verdana;
+  text-align: center;
+  font-Weight: bold;
+}
+
+.ti {  /* Title */
+  color: navy;
+  font-family: Verdana;
+  font-Weight: bold;
+}
+
+h2 { /* question */
+  color: lavender;
+  font-family: verdana;
+  font-size: 15px;
+  font-Weight: bold;
+}
+
+

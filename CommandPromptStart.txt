@@ -1,0 +1,7 @@
+// This file is just for ease of starting server, nothing more.
+
+cd Desktop/"CS Apps"/"Web Dev"/"express Server"
+
+nodemon server.js //old way of starting
+
+node realDynamic.js //new way of starting

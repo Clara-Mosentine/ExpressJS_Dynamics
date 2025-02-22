@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>My First CSS Example</title>
+</head>
+<body>
+
+	<h1>NOT Dynamic!</h1>
+	
+	<div class = "ti">Input the radius of a sphere (in cm):</div>
+
+	<input id="radius" type="number">
+	<button type="button" onclick="Calculate()">Calculate</button>
+
+	<p id="surface"></p>
+	<p id="volume"></p>
+
+	<script>
+	function Calculate() {
+		let rad = document.getElementById("radius").value;
+		
+		surfaceArea = 4 * 3.14159 * 2 * rad
+		volume = 4 / 3 * 3.14159 * rad * rad * rad
+ 		
+		document.getElementById("surface").innerHTML =
+		"<h2> The surface area of this sphere is: " + surfaceArea + " cm^2</h2>"
+		document.getElementById("volume").innerHTML =
+		"<h2> The volume of this sphere is: " + volume + " cm^3</h2>";
+
+	}
+	</script>
+
+
+	<div class = "ti">Find out how much this sphere would weigh depending on its material!</div>
+
+	<button style = "background-color: gold;" type="button" onclick="weigh(19.3)">Gold</button>
+	<button style = "background-color: silver;" type="button" onclick="weigh(10.49)">Silver</button>
+	<button style = "background-color: burlywood;" type="button" onclick="weigh(0.59)">Hardwood</button>
+	<button style = "background-color: white;" type="button" onclick="weigh(0.0013)">Air</button>
+	<button style = "background-color: Aqua;" type="button" onclick="weigh(1.0)">Water</button>
+
+	<p id="w"></p>
+
+	<script>
+	function weigh(density) {
+		let rad = document.getElementById("radius").value;
+		volume = 4 / 3 * 3.14159 * rad * rad * rad
+		weight = volume * density
+ 		
+		document.getElementById("w").innerHTML =
+		"<h2> The sphere would weigh " + weight + " grams.</h2>"
+	}
+	</script>
+
+
+</body>
+</html>
+
+
